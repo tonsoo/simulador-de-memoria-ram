@@ -1,0 +1,7 @@
+; Script para um incrementador simples
+
+move (0) para #atx
+add 1
+move #atx para (0)
+comp (0) < 10
+pula 28
