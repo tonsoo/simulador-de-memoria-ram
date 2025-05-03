@@ -1,0 +1,7 @@
+; Script for subtraction of two numbers
+
+move 10 para #atx   ; Move o valor 10 para o registrador atx
+
+sub 4               ; Subtrai 10 do valor armazenado em atx
+
+move #atx para (1)  ; Move o valor armazenado para o endereço de memoria 1

@@ -1,0 +1,9 @@
+; Script for sum of two numbers
+
+move 2 para (0)         ; Move o valor 2 para endereço de memoria 0
+
+move (0) para #atx      ; Move o valor no endereço de memoria 0 para o registrador atx
+
+add 3                   ; Adiciona 3 ao valor contido em #atx
+
+move #atx para (0)      ; Move o valor de #atx para endereço de memoria 0

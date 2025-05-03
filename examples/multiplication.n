@@ -1,0 +1,19 @@
+; Script for multiplication using repeated addition (5 * 3)
+
+move 0 para #atx       ; Inicializa o registrador atx com 0
+
+move 3 para #itx       ; Move o valor 3 para o registrador itx (contador)
+
+move 5 para #etx       ; Move o valor 5 para o registrador etx (valor fixo da soma)
+
+comp #itx = 0          ; Compara se o valor do registrador itx é igual a 0
+
+pula 10                ; Se for igual, pula para a linha 10 (fim do loop)
+
+add #etx               ; Adiciona o valor de etx ao atx
+
+sub 1 para #itx        ; Subtrai 1 do registrador itx
+
+pula 4                 ; Volta para a linha 4 (início do loop)
+
+move #atx para (2)     ; Move o resultado da multiplicação para o endereço de memória 2
